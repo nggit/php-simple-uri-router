@@ -5,14 +5,14 @@
 
     <?php
 
-    require 'path.class.php';
+    require __DIR__ . '/vendor/autoload.php';
 
     $uri = $_SERVER['QUERY_STRING'];
     // Consider this uri: index.php?fruit.name/apple/banana/melon/orange.html
     // QUERY_STRING will be:
     $uri = 'fruit.name/apple/banana/melon/orange.html';
 
-    $path = new Path();
+    $path = new Nggit\PHPSimpleURIRouter\Path();
     $path->parse($uri);
 
 ### Get the first uri segment

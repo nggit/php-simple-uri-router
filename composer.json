@@ -1,0 +1,20 @@
+{
+    "name": "nggit/php-simple-uri-router",
+    "description": "A Simple URI Router",
+    "homepage": "https://github.com/nggit/php-simple-uri-router",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nggit",
+            "email": "test@anggit.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {"Nggit\\PHPSimpleURIRouter\\": "src/"}
+    }
+}
