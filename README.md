@@ -1,12 +1,12 @@
-<!--
+<!-- <?php /* -->
 # PHP Simple URI Router Quick Tour
 **Tip:** Rename this `md` file to `php` to test it on your web server.
--->
+<!-- */ ?> -->
 
     <?php
-    
+
     require 'path.class.php';
-    
+
     $uri = $_SERVER['QUERY_STRING'];
     // Consider this uri: index.php?fruit.name/apple/banana/melon/orange.html
     // QUERY_STRING will be:
