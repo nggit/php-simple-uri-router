@@ -28,7 +28,7 @@ class Path
 
     public function first($tok = '?&')
     {
-        return strtok(reset($this->path), $tok);
+        return (string) strtok(reset($this->path), $tok);
     }
 
     public function pos($path_segment)
@@ -43,6 +43,6 @@ class Path
             return null;
         }
         $this->after = array_slice($this->path, $offset + 1, $length);
-        return strtok(implode($this->segment_separator, $this->after), $tok);
+        return (string) strtok(implode($this->segment_separator, $this->after), $tok);
     }
 }
