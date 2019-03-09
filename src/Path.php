@@ -19,7 +19,7 @@ class Path
     {
         static $path_str;
         if ($path !== $path_str) {
-            $this->path = array_filter(explode($separator, $path), 'strlen');
+            $this->path = array_values(array_filter(explode($separator, $path), 'strlen'));
         }
         $path_str = $path;
         $this->segment_separator = $separator;
@@ -40,7 +40,7 @@ class Path
     {
         $offset = $this->pos($path_segment);
         if ($offset === false) {
-            return null;
+            return;
         }
         $this->after = array_slice($this->path, $offset + 1, $length);
         return (string) strtok(implode($this->segment_separator, $this->after), $tok);

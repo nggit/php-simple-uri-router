@@ -41,4 +41,4 @@
 
     ?>
 
-Note that one or more empty uri segment will be skipped, eg. `apple//banana`, `$path->after('apple')` will return banana.
+Note that one or more empty uri segment will be skipped, e.g. `apple//banana`, `$path->after('apple')` will return banana.
